@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>NomeSito</title>
+    <title>VUE Hello</title>
 
     <!-- link font awesome,  VERIFICA NUOVE VERSIONI -->
     <!-- <link
@@ -26,17 +26,29 @@
     <!-- link my CSS -->
     <link rel="stylesheet" href="./css/style.css" />
 
-    <!-- VUE 3 CDN -->
+    <!-- link VUE 3 CDN -->
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
   </head>
 
   <body>
-    <header></header>
-
-    <main></main>
-
-    <footer></footer>
-
+    <!-- fatto alcune prove per sistemare il DIV, anche con il CSS, ma la cosa non mi è tanto chiara -->
+    <div id="root">
+      <h1 class="text-white text-center mt-5">Utilizzare VUE.js</h1>
+      <br />
+      <div class="container mt-5">
+        <div class="row d-flex justify-content-center">
+          <div class="col-8 text-white it-overlay">
+            <h1 class="text-center">{{ title }}</h1>
+            <img
+              :src="image.imgVue"
+              :alt="image.imgVue"
+              class="float-start w-25 mt-5 figure-img img-fluid rounded"
+            />
+            <p class="my-5">{{ text }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- link a javascript -->
     <script type="text/javascript" src="./js/main.js"></script>
   </body>
