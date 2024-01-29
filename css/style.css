@@ -10,6 +10,10 @@ body {
     background-color: rgb(249, 196, 118);
 }
 
+h1 {
+    color: red;
+}
+
 #root {
     text-align: center;
 }
